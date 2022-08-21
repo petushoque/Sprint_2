@@ -12,7 +12,6 @@ public abstract class Food {
         this.isVegetarian = isVegetarian;
     }
 
-    /*
     public int getAmount() {
         return amount;
     }
@@ -35,5 +34,5 @@ public abstract class Food {
 
     public void setVegetarian(boolean vegetarian) {
         isVegetarian = vegetarian;
-    }*/
+    }
 }
