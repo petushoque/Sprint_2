@@ -14,8 +14,8 @@ public class Apple extends Food {
 
     @Override
     public float getDiscount() {
-        if (colour.equals(Colour.red)) {
-            return Discount.sale;
+        if (colour.equals(Colour.RED)) {
+            return Discount.SALE;
         }
         else {
             return 0;
