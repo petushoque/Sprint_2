@@ -17,7 +17,7 @@ public class Main {
         productsList.add(greenApple);
         ShoppingCart shoppingCart = new ShoppingCart(productsList);
         System.out.println("Сумма товаров без учета скидки: " + Float.toString(shoppingCart.getSumWithoutDiscount()));
-        System.out.println("Сумма товаров с учетом скидки: " + Float.toString(shoppingCart.getSumWithDiscount()));
+        System.out.println("Сумма скидки: " + Float.toString(shoppingCart.getSumOfDiscount()));
         System.out.println("Сумма вегетарианских товаров без скидки: " + Float.toString(shoppingCart.getSumOfVegetables()));
     }
 }

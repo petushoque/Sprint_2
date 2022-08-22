@@ -19,7 +19,7 @@ public class ShoppingCart {
         return result;
     }
 
-    public float getSumWithDiscount() {
+    public float getSumOfDiscount() {
         float result = 0;
         for (int i = 0; i < food.size(); i++) {
             Food product = food.get(i);
