@@ -23,7 +23,9 @@ public class ShoppingCart {
         float result = 0;
         for (int i = 0; i < food.size(); i++) {
             Food product = food.get(i);
-            result = result + product.getPrice() - (product.getPrice() * (product.getDiscount() / 100));
+            if (product.getDiscount() != 0) {
+                result = result + product.getPrice() * product.getAmount() * (product.getDiscount() / 100);
+            }
         }
         return result;
     }
@@ -33,7 +35,7 @@ public class ShoppingCart {
         for (int i = 0; i < food.size(); i++) {
             Food product = food.get(i);
             if (product.isVegetarian()) {
-                result = result + product.getPrice();
+                result = result + product.getPrice() * product.getAmount();
             }
         }
         return result;
