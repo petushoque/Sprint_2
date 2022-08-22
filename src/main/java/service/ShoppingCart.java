@@ -14,7 +14,7 @@ public class ShoppingCart {
         float result = 0;
         for (int i = 0; i < food.size(); i++) {
             Food product = food.get(i);
-            result = result + product.getPrice();
+            result = result + product.getPrice() * product.getAmount();
         }
         return result;
     }
